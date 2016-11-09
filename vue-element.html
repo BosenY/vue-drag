@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue-dragging</title>
+  <style media="screen">
+    .drag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: 200px;
+      background: green;
+    }
+  </style>
+</head>
+
+<body>
+<div class="demo">
+  <div class="drag"  v-drag></div>
+</div>
+  <script src="./vue.js"></script>
+  <script src="./vue-drag.js"></script>
+  <script type="text/javascript">
+
+
+    new Vue({
+      el: '.demo',
+      data: {
+
+      }
+    })
+  </script>
+</body>
+
+</html>
