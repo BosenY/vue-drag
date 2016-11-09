@@ -1,3 +1,8 @@
+/*
+*Vue-drag.js v1.0.1
+*By BosenY
+*/
+
 ;(function () {
   var vueDrag={};
 
