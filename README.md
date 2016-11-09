@@ -4,7 +4,7 @@ vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽�
 `npm install vue-dragging`
 ### How to use
 首先添加`  <script src="./vue.js"></script>`和`<script src="./vue-drag.js"></script>`标签 (记住是vue-drag.js不是vue-dragging.js!!!)
-在html当中添加标签，假设为：
+在html当中添加标签，然后添加一个'v-drag'，假设为：
 ```html
 <div class="demo">
   <div class="drag"  v-drag></div>
