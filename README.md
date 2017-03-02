@@ -53,4 +53,4 @@ new Vue({
 `v-drag`后面的参数代表了可以拖拽的部分 而conten部分是不可拖拽的，这里class和id的名称可以自取，
 但要注意可拖拽部分的id和`v-drag`后面的参数对应
 
-详细的请查看demo
+详细的请查看[demo](https://github.com/BosenY/vue-drag#readme)
