@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue-dragging</title>
+    <style media="screen">
+        .drag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            background: green;
+            cursor: move;
+        }
+        
+        #dragable {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 220px;
+            height: 50px;
+            background: #0fcebd;
+            color: #ffffff;
+            cursor: move;
+        }
+        
+        #dragable span {
+            width: 220px;
+            line-height: 50px;
+        }
+        
+        .demo2 {
+            position: absolute;
+            top: 20px;
+            left: 500px;
+            z-index: 1111;
+            background: red;
+        }
+        
+        .content {
+            width: 220px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="drag" v-drag>普通的拖动</div>
+        <div class="demo2" v-drag:dragable>
+            <div id="dragable"><span>这里可以拖动</span></div>
+            <div class="content11"><span>这里不可以</span></div>
+        </div>
+    </div>
+
+
+    <script src="./vue.js"></script>
+    <script src="./vue-drag.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '.demo',
+            data: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
