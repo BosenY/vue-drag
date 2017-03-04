@@ -1,9 +1,19 @@
 # vue-dragging
-vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽的功能
+vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽的功能，还有很多功能没有实现,坑慢慢填,毕设做完会继续填坑~~
 ### Install
 `npm install vue-dragging`
+
+### 演示(demo)
+![demo](http://p1.bpimg.com/567571/e88bca39e652c71b.gif)
+
 ### How to use
-首先添加`  <script src="./vue.js"></script>`和`<script src="./vue-drag.js"></script>`标签 (记住是vue-drag.js不是vue-dragging.js!!!)
+
+普通html
+```javascript
+<script src="./vue.js"></script>
+<script src="./vue-drag.js"></script>
+```
+是vue-drag.js不是vue-dragging.js
 
 如果你的项目使用vue-cli搭建的 那么请这样使用:
 ```javascript
