@@ -4,7 +4,7 @@ vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽�
 `npm install vue-dragging`
 
 ### 演示(demo)
-![demo](http://p1.bpimg.com/567571/e88bca39e652c71b.gif)
+![demo](http://p1.bpimg.com/567571/5446bc53dfc0d183.gif)
 
 ### How to use
 
