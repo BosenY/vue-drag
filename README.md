@@ -5,7 +5,7 @@
 `yarn add vue-dragging `
 
 ### 演示(demo)
-<a href="#">点击这里</a>
+<a href="https://boseny.github.io/vue-drag/">点击这里</a>
 
 ### How to use
 
