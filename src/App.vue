@@ -1,10 +1,13 @@
 <template>
   <div id="app">
     <div class="demo">
-        <div class="drag" v-drag>普通的拖动</div>
+        <div class="drag1" v-drag>普通的拖动</div>
         <div class="demo2" v-drag:dragable>
             <div id="dragable"><span>这里可以拖动</span></div>
             <div class="content"><span>这里不可以</span></div>
+        </div>
+        <div class="container">
+            <div class="drag" v-drag>普通的拖动</div>
         </div>
     </div>
   </div>
@@ -22,6 +25,23 @@ export default {
 </script>
 
 <style>
+.container{
+    position: relative;
+    overflow: hidden;
+    width:500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.drag1 {
+    position: absolute;
+    top: 600px;
+    left: 600px;
+    width: 200px;
+    height: 200px;
+    background: green;
+    cursor: move;
+    z-index: 99;
+}
 .drag {
             position: absolute;
             top: 20px;
