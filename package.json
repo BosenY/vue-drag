@@ -1,11 +1,10 @@
 {
-    "name": "vue-drag",
+    "name": "vue-dragging",
     "description": "A Vue.js plugins",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "author": "boseny <a707328818@qq.com>",
     "license": "MIT",
     "main": "vue-drag.js",
-    "private": true,
     "scripts": {
         "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
         "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
