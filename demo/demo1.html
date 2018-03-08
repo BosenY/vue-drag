@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+    <script src="../vue-drag.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+    <div id="app2" v-drag.cursor="a">
+        <el-card class="box-card">
+            <div slot="header" class="clearfix">
+                <span>卡片名称</span>
+                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div v-for="o in 4" :key="o" class="text item">
+                {{'列表内容 ' + o }}
+            </div>
+        </el-card>
+    </div>
+    <script>
+        new Vue({
+            el: '#app2',
+            data: function () {
+                return {
+                    visible: false,
+                    a: '.el-card__header'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
