@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 2);
@@ -11383,7 +11383,7 @@ process.umask = function() { return 0; };
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(1);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_55bf9790_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0fba5dec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(14);
 function injectStyle (ssrContext) {
   __webpack_require__(8)
 }
@@ -11403,7 +11403,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_55bf9790_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0fba5dec_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -11424,7 +11424,7 @@ var content = __webpack_require__(9);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(11)("d885e516", content, true);
+var update = __webpack_require__(11)("5cb21604", content, true);
 
 /***/ }),
 /* 9 */
@@ -11435,7 +11435,7 @@ exports = module.exports = __webpack_require__(10)(false);
 
 
 // module
-exports.push([module.i, ".container{position:relative;overflow:hidden;width:500px;height:500px;border:1px solid #000}.drag1{top:600px;left:600px;z-index:99}.drag,.drag1{position:absolute;width:200px;height:200px;background:green;cursor:move}.drag{top:20px;left:20px}#dragable{position:relative;top:0;left:0;width:220px;height:50px;background:#0fcebd;color:#fff;cursor:move}#dragable span{width:220px;line-height:50px}.demo2{position:absolute;top:20px;left:500px;z-index:1111;background:red}.content{width:220px;height:300px}", ""]);
+exports.push([module.i, ".container{position:relative;overflow:hidden;width:500px;height:500px;border:1px solid #000}.drag1{top:600px;left:600px;z-index:99}.drag,.drag1{width:200px;height:200px;background:green}.drag{top:20px;left:20px}#dragable{top:0;left:0;width:220px;height:50px;background:#0fcebd;color:#fff}#dragable span{width:220px;line-height:50px}.demo2{position:absolute;top:20px;left:500px;z-index:1111;background:red}.content{width:220px;height:300px}", ""]);
 
 // exports
 
@@ -11890,7 +11890,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"demo"},[_c('div',{directives:[{name:"drag",rawName:"v-drag"}],staticClass:"drag1"},[_vm._v("普通的拖动")]),_vm._v(" "),_c('div',{directives:[{name:"drag",rawName:"v-drag:dragable",arg:"dragable"}],staticClass:"demo2"},[_vm._m(0),_vm._v(" "),_vm._m(1)]),_vm._v(" "),_c('div',{staticClass:"container"},[_c('div',{directives:[{name:"drag",rawName:"v-drag"}],staticClass:"drag"},[_vm._v("普通的拖动")])])])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('div',{staticClass:"demo"},[_c('div',{directives:[{name:"drag",rawName:"v-drag"}],staticClass:"drag1"},[_vm._v("普通的拖动")]),_vm._v(" "),_c('div',{directives:[{name:"drag",rawName:"v-drag.cursor",value:('#dragable'),expression:"'#dragable'",modifiers:{"cursor":true}}],staticClass:"demo2"},[_vm._m(0),_vm._v(" "),_vm._m(1)]),_vm._v(" "),_c('div',{staticClass:"container"},[_c('div',{directives:[{name:"drag",rawName:"v-drag"}],staticClass:"drag"},[_vm._v("普通的拖动")])])])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"dragable"}},[_c('span',[_vm._v("这里可以拖动")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"content"},[_c('span',[_vm._v("这里不可以")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -11900,16 +11900,25 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
-*Vue-drag.js v1.0.6
+*Vue-drag.js v1.1.0
 *By BosenY
 */
+function detectmob() {
+	if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+		return true;
+	} else {
+		return false;
+	}
+}
 (function () {
 	var vueDrag = {};
 	vueDrag.install = function (Vue) {
 		Vue.directive("drag", {
 			bind: function (el, binding) {
+				// console.log(binding)
+				el.style.position = "absolute";
 				var isChildDom;
-				if (binding.arg !== undefined) {
+				if (binding.value !== undefined) {
 					isChildDom = true;
 				} else {
 					isChildDom = false;
@@ -11920,17 +11929,28 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 					offsetX = e.pageX - el.offsetLeft;
 					offsetY = e.pageY - el.offsetTop;
 					if (isChildDom) {
-						var barStyle = el.firstChild.currentStyle ? el.firstChild.currentStyle : window.getComputedStyle(el.firstChild, null);
+						var childdom = el.querySelector(binding.value);
+						childdom.style.position = "relative";
+
+						if (binding.modifiers.cursor) childdom.style.cursor = "move";
+						var barStyle = childdom.currentStyle ? childdom.currentStyle : window.getComputedStyle(childdom, null);
 						var boxStyle = el.currentStyle ? el.currentStyle : window.getComputedStyle(el, null);
 						var left = Number(barStyle.getPropertyValue("left").replace("px", "")) + Number(boxStyle.getPropertyValue("left").replace("px", "")) + Number(boxStyle.getPropertyValue("border-left-width").replace("px", ""));
 						var right = left + Number(barStyle.getPropertyValue("width").replace("px", ""));
 						var top = Number(barStyle.getPropertyValue("top").replace("px", "")) + Number(boxStyle.getPropertyValue("top").replace("px", "")) + Number(boxStyle.getPropertyValue("border-top-width").replace("px", ""));
 						var bottom = top + Number(barStyle.getPropertyValue("height").replace("px", ""));
+						// console.log(`left:${left}`)
+						// console.log(`right:${right}`)
+						// console.log(`top:${top}`)
+						// console.log(`bottom:${bottom}`)
+						// console.log(`clientX: ${e.clientX}`)
+						// console.log(`clientY: ${e.clientY}`)
 						if (e.clientX <= right && e.clientX >= left && e.clientY >= top && e.clientY <= bottom) {
 							addEventListener("mousemove", move);
 							addEventListener("mouseup", up);
 						}
 					} else {
+						if (binding.modifiers.cursor) el.style.cursor = "move";
 						addEventListener("mousemove", move);
 						addEventListener("mouseup", up);
 					}
