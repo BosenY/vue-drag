@@ -1,4 +1,4 @@
-# vue-dragging  
+# vue-dragging 1.1.0
 
   vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽的功能
 ### Install
@@ -26,30 +26,32 @@ Vue.use(vueDrag)
 在html当中添加标签，然后添加一个'v-drag'，假设为：
 ```html
 <div class="demo">
-  <div class="drag"  v-drag></div>
+  <div class="drag" v-drag></div>
 </div>
 ```
-然后给要实现拖拽的标签添加css属性：
-```css
-.drag {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 200px;
-      height: 200px;
-      background: green;
-    }
-```
-### 进阶
+
+这样绑定的dom就可以拖拽
+
+
+### 1.1.0
 
 加入了一个可拖拽区域和不可拖区域的方法，示例如下:
 
 ```html
-        <div class="demo2" v-drag:dragable>
+        <div class="demo2" v-drag="'#dragable'">
             <div id="dragable"><span>这里可以拖动</span></div>
             <div class="content"><span>这里不可以</span></div>
         </div>
 ```
 
-`v-drag`后面的参数代表了可以拖拽的部分 而conten部分是不可拖拽的，这里class和id的名称可以自取，
-但要注意可拖拽部分的id和`v-drag`后面的参数对应
+value传的是一个选择器，会让当前dom下第一个找到的seletor允许拖拽
+
+如果你想让鼠标指针变成move，那么这样：
+
+```html
+        <div class="demo2" v-drag.cursor="'#dragable'">
+            <div id="dragable"><span>这里可以拖动</span></div>
+            <div class="content"><span>这里不可以</span></div>
+        </div>
+```
+当然你也可以自己写样式去替换
