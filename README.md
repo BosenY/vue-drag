@@ -1,6 +1,11 @@
-# vue-dragging 1.1.0
+# vue-dragging 
 
-  vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽的功能
+  vue-dragging，一个自己写的vue插件，可以给任意标签添加拖拽的功能。
+  
+## 说明
+
+  目前重点放在别的东西上，所以这个插件不再更新，只能用于pc端，移动端自己可以fork进行优化。
+  
 ### Install
 `yarn add vue-dragging `
 
