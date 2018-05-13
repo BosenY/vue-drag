@@ -49,7 +49,7 @@ Vue.use(vueDrag)
         </div>
 ```
 
-value传的是一个选择器，会让当前dom下第一个找到的seletor允许拖拽
+value传的是一个选择器，会让当前dom下第一个找到的seletor允许拖拽
 
 如果你想让鼠标指针变成move，那么这样：
 
